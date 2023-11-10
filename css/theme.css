@@ -4893,7 +4893,7 @@ input[type=number] {
   }
 }
 
-.animate__fadeInRight {
+.animate__bounceInLeft {
     opacity: 1;
 }
 
@@ -4949,7 +4949,7 @@ input[type=number] {
   }
 }
 
-.animate__fadeInLeft {
+.animate__bounceInLeft {
     opacity: 1;
 }
   

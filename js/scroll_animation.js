@@ -46,7 +46,7 @@ const observer3 = new IntersectionObserver(entries => {
       }
   
       // We're not intersecting, so remove the class!
-      square.classList.remove('animate__fadeInRight');
+      // square.classList.remove('animate__fadeInRight');
     });
   });
   
@@ -74,21 +74,21 @@ const observer4 = new IntersectionObserver(entries => {
 
 //   5th observer
 
-// const observer5 = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       const square = entry.target.querySelector('.observ5');
+const observer5 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.observ5');
   
-//       if (entry.isIntersecting) {
-//         square.classList.add('animate__fadeInRight');
-//         return; // if we added the class, exit the function
-//       }
+      if (entry.isIntersecting) {
+        square.classList.add('animate__bounceInLeft');
+        return; // if we added the class, exit the function
+      }
   
-//       // We're not intersecting, so remove the class!
-//       square.classList.remove('animate__fadeInRight');
-//     });
-//   });
+      // We're not intersecting, so remove the class!
+      square.classList.remove('animate__bounceInLeft');
+    });
+  });
   
-//   observer5.observe(document.querySelector('.observ-wrapper5'));
+  observer5.observe(document.querySelector('.observ-wrapper5'));
 
 
   //   6th observer
@@ -129,21 +129,21 @@ const observer7 = new IntersectionObserver(entries => {
 
       //   8th observer
 
-// const observer8 = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//       const square = entry.target.querySelector('.observ8');
+const observer8 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const square = entry.target.querySelector('.observ8');
   
-//       if (entry.isIntersecting) {
-//         square.classList.add('animate__zoomIn');
-//         return; // if we added the class, exit the function
-//       }
+      if (entry.isIntersecting) {
+        square.classList.add('animate__fadeInUp');
+        return; // if we added the class, exit the function
+      }
   
-//       // We're not intersecting, so remove the class!
-//       square.classList.remove('animate__zoomIn');
-//     });
-//   });
+      // We're not intersecting, so remove the class!
+      square.classList.remove('animate__fadeInUp');
+    });
+  });
   
-//   observer8.observe(document.querySelector('.observ-wrapper8'));
+  observer8.observe(document.querySelector('.observ-wrapper8'));
 
   //   9th observer
 
@@ -152,12 +152,12 @@ const observer9 = new IntersectionObserver(entries => {
       const square = entry.target.querySelector('.observ9');
   
       if (entry.isIntersecting) {
-        square.classList.add('animate__fadeInLeft');
+        square.classList.add('animate__bounceInLeft');
         return; // if we added the class, exit the function
       }
   
       // We're not intersecting, so remove the class!
-      square.classList.remove('animate__fadeInLeft');
+      square.classList.remove('animate__bounceInLeft');
     });
   });
   

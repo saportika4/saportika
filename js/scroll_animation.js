@@ -152,12 +152,12 @@ const observer9 = new IntersectionObserver(entries => {
       const square = entry.target.querySelector('.observ9');
   
       if (entry.isIntersecting) {
-        square.classList.add('animate__bounceInLeft');
+        square.classList.add('animate__fadeInLeft');
         return; // if we added the class, exit the function
       }
   
       // We're not intersecting, so remove the class!
-      square.classList.remove('animate__bounceInLeft');
+      square.classList.remove('animate__fadeInLeft');
     });
   });
   

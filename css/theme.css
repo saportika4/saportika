@@ -1103,7 +1103,7 @@ License URI:
 }
 
 .singleClient a img {
-    max-width: 119px;
+    max-width: 180px;
     height: auto;
     position: absolute;
     left: 0;
@@ -1111,7 +1111,7 @@ License URI:
     right: 0;
     bottom: 0;
     margin: auto;
-    opacity: .4;
+    opacity: 1;
     display: inline-block !important;
     transition: all ease 500ms;
     -moz-transition: all ease 500ms;
@@ -1155,7 +1155,7 @@ License URI:
     display: none;
 }
 
-.client_slider .owl-controls .owl-dots {
+/* .client_slider .owl-controls .owl-dots {
     line-height: .8;
     text-align: center;
     margin-top: 27px;
@@ -1176,7 +1176,7 @@ License URI:
 .client_slider .owl-controls .owl-dots .owl-dot.active span,
 .client_slider .owl-controls .owl-dots .owl-dot:hover span {
     background: #000000;
-}
+} */
 
 .singleClient_2 {
     position: relative;
@@ -1418,7 +1418,7 @@ License URI:
 .footer_1 {
     position: relative;
     padding: 130px 0 0;
-    background: url(../images/bg/5.jpg) no-repeat center center / cover;
+    background: linear-gradient(to bottom ,rgb(0,0,0,1),rgb(0,0,0,0.4)) ,url(../images/footer-image.webp) no-repeat center center / cover;
 }
 
 .footer_1 .widget {

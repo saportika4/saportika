@@ -60,12 +60,12 @@ const observer4 = new IntersectionObserver(entries => {
       const square = entry.target.querySelector('.observ4');
   
       if (entry.isIntersecting) {
-        square.classList.add('animate__fadeInDown');
+        square.classList.add('animate__fadeInUp');
         return; // if we added the class, exit the function
       }
   
       // We're not intersecting, so remove the class!
-      square.classList.remove('animate__fadeInDown');
+      square.classList.remove('animate__fadeInUp');
     });
   });
   

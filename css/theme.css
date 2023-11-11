@@ -4955,3 +4955,25 @@ input[type=number] {
   
 
 /* scroll animation end */
+
+
+body::-webkit-scrollbar {
+    width: 5px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    display: none !important;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #e6a002;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+
+      /* creates padding around scroll thumb */
+      /* border: 3px solid rgb(63, 62, 61); */
+  }
+
+::selection {
+    background: #e6a002;
+    color: white;
+}

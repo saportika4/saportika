@@ -1,0 +1,103 @@
+
+section#demo {
+	background: #fbfbfb;
+    position: relative;
+    padding: 0;
+    min-height: 100vh;
+    transition: height 9999s;
+}
+.vertical-align {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+}
+.card {
+	background: #fff;
+    box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
+    padding: 7px 15px;
+}
+
+
+
+#fixed-form-container{
+    max-height: 85vh;
+    z-index: 999;
+    position: fixed;
+    bottom: 20px;
+    right: 3%;
+    width: 94%;
+    text-align: center;
+    margin: 0;
+
+}
+
+#fixed-form-container .button:before { 
+   content: "+ ";
+}
+
+#fixed-form-container .expanded:before { 
+    content: "- ";
+}
+
+#fixed-form-container .button { 
+    margin-right: 40px !important;
+  font-size:1.1em; 
+	cursor: pointer;
+	/* margin-left: auto;
+  margin-right: auto; */
+	/* border: 2px solid #11100f; */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 20px 20px 20px 20px;
+	padding: 5px 20px 5px 20px;
+	background-color: #faa519;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+  -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+#fixed-form-container .body{
+    background-color: #fff; 
+    border-radius: 30px;
+    /* border: 2px solid #785d55; */
+    margin-bottom: 16px;
+    padding: 10px; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    /* -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.3); */
+}
+
+@media (max-width:768px) {
+    #fixed-form-container .button{
+        margin-right: auto !important;
+     }
+}
+
+@media only screen and (min-width:768px){
+    #fixed-form-container .button{
+       margin: 0;
+    }
+    #fixed-form-container {
+        right: 10%;
+        width: 55%;
+        text-align: right;
+    }
+
+    #fixed-form-container .body{
+        padding: 20px;
+        border-radius: 30px;
+        /* border-radius: 0px 5px 5px 5px; */
+    }
+}
+
+
+.sapo{ 
+    color: #06c5a6;
+}

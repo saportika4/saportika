@@ -41,7 +41,7 @@ const observer3 = new IntersectionObserver(entries => {
       const square = entry.target.querySelector('.observ3');
   
       if (entry.isIntersecting) {
-        square.classList.add('animate__fadeInRight');
+        square.classList.add('animate__fadeInTopRight');
         return; // if we added the class, exit the function
       }
   
@@ -139,7 +139,7 @@ const observer8 = new IntersectionObserver(entries => {
       }
   
       // We're not intersecting, so remove the class!
-      square.classList.remove('animate__fadeInUp');
+      // square.classList.remove('animate__fadeInUp');
     });
   });
   

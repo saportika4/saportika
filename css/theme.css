@@ -3216,7 +3216,7 @@ textarea.input-form:focus {
 / 27. Popup Menu
 ------------------------------------------------------------------------------*/
 .popup {
-    background: rgba(17, 17, 17, 0.98);
+    background: rgba(0, 0, 0, 1);
     display: -webkit-flex;
     display: -ms-flexbox;
     display: -moz-box;

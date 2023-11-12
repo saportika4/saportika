@@ -1577,3 +1577,9 @@
 .slideOutUp {
   animation-name: slideOutUp;
 }
+
+
+/* .animate__faster {
+  --animation-duration: 500ms !important;
+  --animate-delay: 0.1s;
+} */

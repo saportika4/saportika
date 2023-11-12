@@ -398,9 +398,9 @@ License URI:
     /--------------------------------------------------------*/
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > 40) {
-      $("#header").addClass("fixedHeader animated fadeInDown");
+      $("#header").addClass("fixedHeader animated animate__slideInDown animate__faster");
     } else {
-      $("#header").removeClass("fixedHeader animated fadeInDown");
+      $("#header").removeClass("fixedHeader animated animate__slideInDown animate__faster");
     }
     scroll_topmenu();
   });

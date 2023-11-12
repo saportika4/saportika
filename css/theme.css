@@ -4504,7 +4504,7 @@ textarea.input-form:focus {
 ------------------------------------------------------*/
 .showit {
     background: #e62b4a;
-    bottom: 60px;
+    bottom: 20px;
     color: #ffffff;
     font-size: 20px;
     height: 40px;
@@ -4780,14 +4780,14 @@ textarea.input-form:focus {
 }
 .showit {
     background: rgb(228 158 4) !important;
-    bottom: 60px;
+    bottom: 20px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     height: 40px;
     line-height: 0.8;
     padding: 10px 12px;
     position: fixed;
-    right: 60px;
+    right: 40px;
     text-align: center;
     width: 40px;
     z-index: 99;
@@ -4798,6 +4798,16 @@ textarea.input-form:focus {
     bottom: 20px;
     left: 22px;
     z-index: 999;
+}
+
+@media(max-width:768px) {
+    .showit {
+        bottom:50px !important;
+    }
+
+    .whatsapp {
+        bottom: 50px;
+    }
 }
 
 .whatsapp-logo {

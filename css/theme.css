@@ -4996,16 +4996,6 @@ body::-webkit-scrollbar {
     min-height: 100vh;
 }
 
-@media (max-width:600px) {
-    .video_resp1 {
-        min-height: 40vh;
-        max-height: 40vh;
-    }
 
-    .video_resp2 {
-        min-height: 40vh;
-        max-height: 40vh;
-    }
-}
 
 /* commit */

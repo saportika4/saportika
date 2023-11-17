@@ -25,41 +25,58 @@ section#demo {
     max-height: 85vh;
     z-index: 999;
     position: fixed;
-    bottom: 20px;
+    bottom: 43px;
     right: 3%;
     width: 94%;
     text-align: center;
     margin: 0;
-
+    /* display: none; */
 }
 
-#fixed-form-container .button:before { 
-   content: "+ ";
+/* .shownow {
+    display: inline !important;
+} */
+
+#chat_button:before { 
+   content: "";
 }
 
-#fixed-form-container .expanded:before { 
-    content: "- ";
+.expanded:before { 
+    /* content: "x";
+    font-size: 5rem;
+    color: #faa519; */
+    content: "x" !important;
+    font-size: 5rem;
+    color: #faa519;
+    position: absolute;
+    z-index: 999;
+    bottom: 20px;
+    right: 0;
 }
 
-#fixed-form-container .button { 
+#chat_button { 
     margin-right: 40px !important;
-  font-size:1.1em; 
+  /* font-size:1.1rem;  */
 	cursor: pointer;
 	/* margin-left: auto;
-  margin-right: auto; */
-	/* border: 2px solid #11100f; */
+  margin-right: auto;
+	border: 2px solid #11100f;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 20px 20px 20px 20px;
 	padding: 5px 20px 5px 20px;
-	background-color: #faa519;
+	background-color: #faa519; */
 	color: #fff;
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-  -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 2px;
+    right: 150px;
+    z-index: 999;
+  /* -webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
-  box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.3); */
 }
 
 #fixed-form-container .body{
@@ -75,13 +92,13 @@ section#demo {
 }
 
 @media (max-width:768px) {
-    #fixed-form-container .button{
+    #chat_button{
         margin-right: auto !important;
      }
 }
 
 @media only screen and (min-width:768px){
-    #fixed-form-container .button{
+    #chat_button{
        margin: 0;
     }
     #fixed-form-container {
@@ -95,6 +112,34 @@ section#demo {
         border-radius: 30px;
         /* border-radius: 0px 5px 5px 5px; */
     }
+}
+
+.img_hide {
+    max-width: 200px;
+}
+
+@media (max-width:600px) {
+    .video_resp1 {
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+
+    .video_resp2 {
+        min-height: 40vh;
+        max-height: 40vh;
+    }
+
+    .img_hide {
+        max-width: 150px;
+    }
+
+    #chat_button{
+        right: 100px;
+    }
+}
+
+.expanded img {
+    display: none !important;
 }
 
 

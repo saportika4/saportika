@@ -10,8 +10,9 @@
     <meta name="author" content="Saportika">
     <title>Digital Marketing Company Kochi | Saportika</title>
 
+    <link rel="manifest" href="manifest.json">
 
-    <!-- Include All CSS here-->
+        <!-- Include All CSS here-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/owl.theme.css" /> -->
@@ -42,7 +43,7 @@
     <link rel="icon" type="image/png" href="images/home_1/logo.webp">
 </head>
 
-<body>
+<body onload="return CheckRefresh()">
     <!-- Preloading -->
     <div class="preloader text-center">
         <img src="images/home_1/logo.webp" alt="" style="max-width: 150px;">
@@ -867,6 +868,12 @@
     <!-- Bact To To -->
     <a id="backToTop" href="#" class=""><i class="fa fa-angle-double-up"></i></a>
     <!-- Bact To To -->
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
     
 
     <!-- Include All JS -->
@@ -990,6 +997,25 @@
 	<script type="text/javascript" src="dist/autosize.min.js"></script>
     <script type="text/javascript" src="dist/chat.js"></script>
 	<script type="text/javascript" src="dist/jquery.convform.js"></script>
+
+    <!-- clear link on refresh -->
+
+        <script>
+            function CheckRefresh() {
+                if (performance.navigation.type == 1) {
+                    window.location.href = removeURLParameters(window.location.href);
+                }
+            }
+            function removeURLParameters(url) {
+                    var urlparts = url.split('?');   
+                    if (urlparts.length >= 2) {
+                        return urlparts[0];
+                    }
+                    else {
+                        return url;
+                    }
+            }
+        </script>
 
 	<script>
 		function google(stateWrapper, ready) {

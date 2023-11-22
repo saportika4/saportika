@@ -2057,8 +2057,8 @@ License URI:
 .pageBanner {
     position: relative;
     min-height: 465px;
-    background: url(../images/bg/banner.png) no-repeat center center / cover;
-    padding-top: 224px;
+    background: url(../images/bg/banner3.webp) no-repeat center center / cover;
+    padding-top: 362px;
 }
 
 .banner_content {
@@ -2091,6 +2091,8 @@ License URI:
     margin: 0;
     color: #FFF;
     text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 1px 1px 2px #ffb200;
 }
 
 .agency_img1 {

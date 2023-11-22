@@ -5,6 +5,8 @@
         <title>Meipaly - Fine One Page Parallax HTML5 Responsive Template</title>
         <meta name="viewport" content="width=device-width">
 
+        <link rel="manifest" href="manifest.json">
+
         <!-- Include All CSS here-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
@@ -379,6 +381,12 @@
         <!-- Bact To To -->
         <a id="backToTop" href="#" class=""><i class="fa fa-angle-double-up"></i></a>
         <!-- Bact To To -->
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js');
+            }
+        </script>
 
         <!-- Include All JS -->
         <script src="js/jquery.js"></script>

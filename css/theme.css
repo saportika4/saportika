@@ -55,7 +55,14 @@ License URI:
     z-index: 5;
     background: transparent;
     padding: 30px 40px 0 45px;
+    background: linear-gradient(to bottom, black, transparent);
     /* border-bottom: 2px solid rgba(255, 255, 255, .10); */
+}
+
+@media (max-width:767px) {
+    .header_01 {
+        background: linear-gradient(to bottom, transparent, transparent);
+    }
 }
 
 .logo {
@@ -2056,9 +2063,64 @@ License URI:
 ------------------------------------------------------*/
 .pageBanner {
     position: relative;
-    min-height: 465px;
-    background: url(../images/bg/banner3.jpg) no-repeat center center / cover;
+    min-height: 100vh;
+    background: url(../images/bg/5757173_2947978.jpg) no-repeat center center / cover;
+    padding-top: 280px;
+}
+
+.pageBanner2 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/seo.jpg) no-repeat center center / cover;
     padding-top: 362px;
+}
+
+@media(max-width:900px) {
+    .pageBanner2 {
+        min-height: 40vh;
+    }
+}
+
+.pageBanner3 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/gmb.jpg) no-repeat center center / cover;
+    padding-top: 230px;
+}
+
+.pageBanner4 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/website.jpg) no-repeat center center / cover;
+    padding-top: 70vh;
+}
+
+.pageBanner5 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/social-media.webp) no-repeat center center / cover;
+    padding-top: 362px;
+}
+
+.pageBanner6 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/graphic.jpg) no-repeat center center / cover;
+    padding-top: 322px;
+}
+
+.pageBanner7 {
+    position: relative;
+    min-height: 100vh;
+    background: url(../images/bg/13184981_5112782.jpg) no-repeat center center / cover;
+    padding-top: 87vh;
+}
+
+@media(max-width:600px) {
+    .pageBanner7 {
+        min-height: 66vh;
+        padding-top: 60vh;
+    }
 }
 
 .banner_content {
@@ -2089,10 +2151,10 @@ License URI:
     font-weight: 700;
     letter-spacing: 2.8px;
     margin: 0;
-    color: #FFF;
+    color: #e6a002;
     text-transform: uppercase;
     display: inline-block;
-    text-shadow: 1px 1px 2px #ffb200;
+    text-shadow: 6px 1px 6px #3a362f;
 }
 
 .agency_img1 {

@@ -71,7 +71,7 @@ License URI:
 }
 
 .logo img {
-    max-width: 130px;
+    max-width: 105px;
     height: auto;
 }
 
@@ -4893,7 +4893,7 @@ textarea.input-form:focus {
     }
 
     .whatsapp {
-        bottom: 50px;
+        bottom: 20px;
     }
 }
 

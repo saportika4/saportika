@@ -119,13 +119,13 @@ License URI:
 
     @media (max-width: 767px) {
 
-        .header_01 img {
+        /* .header_01 img {
             visibility: hidden !important;
         }
 
         .fixedHeader img {
             visibility: visible !important;
-        }
+        } */
 
     }
 

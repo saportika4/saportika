@@ -120,13 +120,13 @@ section#demo {
 
 @media (max-width:600px) {
     .video_resp1 {
-        min-height: 72vh;
-        max-height: 72vh;
+        min-height: 65vh;
+        max-height: 65vh;
     }
 
     .video_resp2 {
-        min-height: 72vh;
-        max-height: 72vh;
+        min-height: 65vh;
+        max-height: 65vh;
     }
 
     .img_hide {

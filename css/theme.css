@@ -255,6 +255,23 @@ License URI:
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
+@media(max-width:660px) {
+    .fixedHeader2 {
+        max-height: 105px;
+        background: #000000;
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        border: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+}
+
 .black_color.fixedHeader {
     background: #fff;
 }

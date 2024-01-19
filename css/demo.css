@@ -115,7 +115,7 @@ section#demo {
 }
 
 .img_hide {
-    max-width: 200px;
+    max-width: 100px;
 }
 
 @media (max-width:600px) {
